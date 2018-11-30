@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="deliverLogInAncker" prefHeight="516.0" prefWidth="452.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dinamore.controller.DeliverLogInController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="136.0" layoutY="31.0" prefHeight="48.0" prefWidth="164.0" text="LOG IN" textFill="RED">
+         <font>
+            <Font name="System Bold Italic" size="31.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="92.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true" style="-fx-blend-mode: white;">
+         <image>
+            <Image url="@../assiest/1531308330_download.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="txtUserName" layoutX="95.0" layoutY="282.0" prefHeight="38.0" prefWidth="247.0" promptText="User Name" />
+      <JFXPasswordField fx:id="txtPassword" layoutX="95.0" layoutY="355.0" prefHeight="38.0" prefWidth="247.0" promptText="Password" />
+      <JFXButton fx:id="butLogIn" layoutX="125.0" layoutY="438.0" onMouseClicked="#logInClick" prefHeight="31.0" prefWidth="93.0" style="-fx-background-color: #e0e0e0;" text="Log In" />
+      <JFXButton fx:id="butCancel" layoutX="223.0" layoutY="438.0" onMouseClicked="#deliverCancelClicked" prefHeight="31.0" prefWidth="93.0" style="-fx-background-color: #e0e0e0;" text="Cancel" />
+   </children>
+</AnchorPane>

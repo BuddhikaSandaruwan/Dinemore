@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="AdminAncker" prefHeight="663.0" prefWidth="903.0" style="-fx-background-color: #acc2ef;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dinamore.controller.AdminController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="303.0" layoutY="24.0" prefHeight="45.0" prefWidth="228.0" text="Admin" textFill="#860000" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font name="System Bold Italic" size="37.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="164.0" fitWidth="154.0" layoutX="726.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assiest/profile_thumb.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="45.0" layoutY="139.0" onMouseClicked="#cheffClick" prefHeight="67.0" prefWidth="452.0" style="-fx-background-color: #6492ef;" text="Cheff">
+         <font>
+            <Font size="27.0" />
+         </font></JFXButton>
+      <JFXButton fx:id="butDeliver" layoutX="45.0" layoutY="242.0" onMouseClicked="#deliverClick" prefHeight="67.0" prefWidth="452.0" style="-fx-background-color: #6492ef;" text="Deliver">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="butReseption" layoutX="46.0" layoutY="345.0" onMouseClicked="#reseptionClick" prefHeight="67.0" prefWidth="452.0" style="-fx-background-color: #6492ef;" text="Reseption">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="butFood" layoutX="45.0" layoutY="450.0" onMouseClicked="#foodClick" prefHeight="67.0" prefWidth="452.0" style="-fx-background-color: #6492ef;" text="Food">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="butReports" layoutX="44.0" layoutY="558.0" onMouseClicked="#reportsClick" prefHeight="67.0" prefWidth="452.0" style="-fx-background-color: #6492ef;" text="Reports">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="butBack" layoutX="724.0" layoutY="574.0" onMouseClicked="#backClicked" prefHeight="45.0" prefWidth="145.0" style="-fx-background-color: #6492ef;" text="back">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="cheffAncker" prefHeight="663.0" prefWidth="903.0" style="-fx-background-color: #acc2ef;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dinamore.controller.CheffController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="251.0" layoutY="24.0" prefHeight="45.0" prefWidth="325.0" text="Cooking Order" textFill="#860000" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font name="System Bold Italic" size="37.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="164.0" fitWidth="154.0" layoutX="726.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assiest/profile_thumb.jpg" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tableCoocking" layoutX="13.0" layoutY="247.0" prefHeight="341.0" prefWidth="863.0" style="-fx-background-color: #8baef4;">
+        <columns>
+          <TableColumn prefWidth="139.0" text="Item ID" />
+            <TableColumn prefWidth="538.0" text="Item Name" />
+            <TableColumn prefWidth="185.0" text="QTY" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="butRaddy" layoutX="737.0" layoutY="602.0" onMouseClicked="#RaddyClicked" prefHeight="36.0" prefWidth="124.0" style="-fx-background-color: #6492ef;" text="Raddy" />
+      <JFXTextField fx:id="txtState" labelFloat="true" layoutX="774.0" layoutY="204.0" prefHeight="26.0" prefWidth="68.0" promptText="states" text="coocking" />
+      <JFXButton fx:id="butGetOrder" layoutX="31.0" layoutY="601.0" onMouseClicked="#getOrderClicked" prefHeight="36.0" prefWidth="124.0" style="-fx-background-color: #6492ef;" text="Get Order" />
+      <JFXButton fx:id="butBack" layoutX="166.0" layoutY="601.0" onMouseClicked="#backClicked" prefHeight="36.0" prefWidth="124.0" style="-fx-background-color: #6492ef;" text="back" />
+      <JFXTextField fx:id="txtID" labelFloat="true" layoutX="16.0" layoutY="16.0" prefHeight="26.0" prefWidth="68.0" promptText="Cheff ID" />
+   </children>
+</AnchorPane>

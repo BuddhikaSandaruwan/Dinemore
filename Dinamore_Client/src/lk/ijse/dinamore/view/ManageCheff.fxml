@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="CheffConAncker" prefHeight="663.0" prefWidth="903.0" style="-fx-background-color: #acc2ef;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dinamore.controller.ManageCheffController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="246.0" layoutY="24.0" prefHeight="45.0" prefWidth="335.0" text="Cheff Controll" textFill="#860000" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font name="System Bold Italic" size="37.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="164.0" fitWidth="154.0" layoutX="726.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assiest/profile_thumb.jpg" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tableCheff" layoutX="13.0" layoutY="356.0" prefHeight="232.0" prefWidth="863.0" style="-fx-background-color: #8baef4;">
+        <columns>
+          <TableColumn fx:id="tCheffID" prefWidth="98.0" text="CheffID" />
+          <TableColumn fx:id="tCheffName" prefWidth="163.0" text="Cheff Name" />
+            <TableColumn fx:id="tCheffAdress" prefWidth="260.0" text="Adress" />
+            <TableColumn fx:id="tCheffNIC" prefWidth="156.0" text="NIC" />
+            <TableColumn fx:id="tCheffTP" prefWidth="185.0" text="TP" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="butAdd" layoutX="737.0" layoutY="602.0" onMouseClicked="#addClicked" prefHeight="36.0" prefWidth="124.0" style="-fx-background-color: #6492ef;" text="ADD" />
+      <JFXTextField fx:id="txtCheffName" labelFloat="true" layoutX="33.0" layoutY="85.0" prefHeight="36.0" prefWidth="266.0" promptText="Cheff Name" />
+      <JFXTextField fx:id="txtCheffNIC" labelFloat="true" layoutX="32.0" layoutY="137.0" prefHeight="36.0" prefWidth="266.0" promptText="Cheff NIC" />
+      <JFXTextField fx:id="txtCheffAdress" labelFloat="true" layoutX="33.0" layoutY="190.0" prefHeight="36.0" prefWidth="266.0" promptText="Cheff Adress" />
+      <JFXTextField fx:id="txtCheffTP" labelFloat="true" layoutX="376.0" layoutY="85.0" prefHeight="36.0" prefWidth="266.0" promptText="Cheff TP" />
+      <JFXTextField fx:id="txtCheffUserName" labelFloat="true" layoutX="377.0" layoutY="139.0" prefHeight="36.0" prefWidth="266.0" promptText="Cheff User Name" />
+      <JFXTextField fx:id="txtPassword" layoutX="376.0" layoutY="191.0" prefHeight="36.0" prefWidth="266.0" promptText="Cheff Password" />
+      <JFXButton layoutX="593.0" layoutY="602.0" prefHeight="36.0" prefWidth="124.0" style="-fx-background-color: #6492ef;" text="DELETE" />
+      <JFXButton layoutX="450.0" layoutY="602.0" prefHeight="36.0" prefWidth="124.0" style="-fx-background-color: #6492ef;" text="UPDATE" />
+      <JFXButton fx:id="butBack" layoutX="22.0" layoutY="602.0" onMouseClicked="#backClicked" prefHeight="36.0" prefWidth="124.0" style="-fx-background-color: #6492ef;" text="Back" />
+   </children>
+</AnchorPane>

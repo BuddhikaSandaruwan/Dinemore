@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="reseptionAncker" prefHeight="663.0" prefWidth="903.0" style="-fx-background-color: #acc2ef;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dinamore.controller.ReseptionController">
+   <children>
+      <JFXTextField fx:id="txtCustomerName" labelFloat="true" layoutX="13.0" layoutY="88.0" prefHeight="26.0" prefWidth="255.0" promptText="Customer Name" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="303.0" layoutY="24.0" prefHeight="45.0" prefWidth="228.0" text="Set Order" textFill="#860000" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font name="System Bold Italic" size="37.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtCustomerNIC" labelFloat="true" layoutX="13.0" layoutY="147.0" prefHeight="26.0" prefWidth="255.0" promptText="Customer NIC" />
+      <JFXTextField fx:id="txtDeliveryAdress" labelFloat="true" layoutX="12.0" layoutY="208.0" prefHeight="26.0" prefWidth="255.0" promptText="Dilivery Adress" />
+      <JFXTextField fx:id="txtContactNum" labelFloat="true" layoutX="13.0" layoutY="266.0" prefHeight="26.0" prefWidth="255.0" promptText="contact number" />
+      <ImageView fitHeight="164.0" fitWidth="154.0" layoutX="726.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assiest/profile_thumb.jpg" />
+         </image>
+      </ImageView>
+      <JFXComboBox fx:id="combFood" layoutX="355.0" layoutY="89.0" prefHeight="26.0" prefWidth="177.0" promptText="Food Items" />
+      <JFXButton fx:id="butAdd" layoutX="596.0" layoutY="256.0" onMouseClicked="#addClick" prefHeight="46.0" prefWidth="92.0" style="-fx-background-color: #6492ef;" text="ADD" />
+      <TableView fx:id="tableOrder" layoutX="13.0" layoutY="322.0" prefHeight="262.0" prefWidth="863.0" style="-fx-background-color: #8baef4;">
+        <columns>
+          <TableColumn prefWidth="83.0" text="Item ID" />
+          <TableColumn prefWidth="269.0" text="Item Name" />
+            <TableColumn prefWidth="77.0" text="QTY" />
+            <TableColumn prefWidth="143.0" text="Price" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="butSubmit" layoutX="737.0" layoutY="602.0" onMouseClicked="#submitClicked" prefHeight="36.0" prefWidth="124.0" style="-fx-background-color: #6492ef;" text="Submit" />
+      <JFXTextField fx:id="txtPrice" labelFloat="true" layoutX="352.0" layoutY="207.0" prefHeight="26.0" prefWidth="177.0" promptText="Price" />
+      <JFXTextField fx:id="txtDescount" labelFloat="true" layoutX="352.0" layoutY="266.0" prefHeight="26.0" prefWidth="177.0" promptText="Discount" text="00" />
+      <JFXTextField fx:id="txtStates" labelFloat="true" layoutX="774.0" layoutY="204.0" prefHeight="26.0" prefWidth="68.0" promptText="states" text="pending" />
+      <JFXTextField fx:id="txtQty" labelFloat="true" layoutX="353.0" layoutY="147.0" onKeyReleased="#qtyKeyRelese" prefHeight="26.0" prefWidth="177.0" promptText="QTY" />
+      <JFXButton fx:id="butBack" layoutX="40.0" layoutY="602.0" onMouseClicked="#backClick" prefHeight="36.0" prefWidth="124.0" style="-fx-background-color: #6492ef;" text="back" />
+      <JFXTextField fx:id="txtID" labelFloat="true" layoutX="778.0" layoutY="282.0" prefHeight="26.0" prefWidth="68.0" promptText="ReseptionID" />
+      <JFXTextField fx:id="txtSearch" labelFloat="true" layoutX="23.0" layoutY="27.0" onAction="#searchOnAction" prefHeight="26.0" prefWidth="124.0" promptText="Search" />
+   </children>
+</AnchorPane>
